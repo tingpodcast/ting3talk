@@ -11,16 +11,16 @@
       box-sizing: border-box;
     }
 
-body {
-  background: radial-gradient(circle, #7788a0 100%, #828994 100%);
-  color: #fff;
-  font-family: 'Helvetica Neue', sans-serif;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+    body {
+      background: radial-gradient(circle, #7788a0 0%, #282c34 100%);
+      color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
     .container {
       text-align: center;
@@ -42,7 +42,13 @@ body {
     h1 {
       font-size: 2.5rem;
       letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
       margin-bottom: 2rem;
+      color: #ccc;
     }
 
     .button-group {
@@ -76,7 +82,10 @@ body {
 
     @media (max-width: 768px) {
       h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+      }
+      p.subtitle {
+        font-size: 1rem;
       }
       img.avatar {
         width: 100px;
@@ -88,7 +97,8 @@ body {
 <body>
   <div class="container">
     <img src="avatar.jpg" alt="ting3talk 頭像" class="avatar" />
-    <h1>A~Z人生檔案抽取</h1>
+    <h1>聽聽就好</h1>
+    <p class="subtitle">A~Z人生檔案抽取</p>
     <div class="button-group">
       <a href="mailto:your@email.com" class="button">✉️ 聯絡我們</a>
       <a href="https://open.spotify.com/show/your-show-id" class="button" target="_blank">🎧 Spotify</a>
