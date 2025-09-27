@@ -25,20 +25,30 @@ body {
   background: radial-gradient(circle at center, #aab5c9 0%, #6a7383 25%, #3a3f4a 60%, #1c1f26 100%);
   color: #fff;
   font-family: 'Poppins', 'Noto Sans TC', sans-serif;
-  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  overflow: hidden;
+  align-items: center;
+  height: 100vh;
 }
 
 
-    .container {
-      text-align: center;
-      animation: fadeIn 2s ease forwards;
-      opacity: 0;
-      max-width: 90%;
-    }
+
+.container {
+  text-align: center;
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+  max-width: 90%;
+  max-height: 90vh;     /* 限制容器最大高度 */
+  overflow-y: scroll;   /* 允許垂直滾動 */
+  -ms-overflow-style: none;  /* IE/Edge 隱藏滾動條 */
+  scrollbar-width: none;     /* Firefox 隱藏滾動條 */
+}
+
+/* Chrome / Safari / Opera 隱藏滾動條 */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 
     img.avatar {
       width: 140px;
